@@ -1,7 +1,7 @@
 {
-  "name": "Bagaskara Music Bot",
+  "name": "Grey Music Bot",
   "description": "Not Musik Untuk Menghibur Dunia Telegram.",
-  "repository": "https://github.com/ybgskr12/Musikbagas.git",
+  "repository": "https://github.com/grey423/MusikGrey.git",
   "logo": "https://telegra.ph/file/3d60712c779c10891e1ce.jpg",
   "keywords": [
   "python3",
@@ -12,7 +12,7 @@
   "telegram-bot",
   "pyrogram"
   ],
-  "repository": "https://github.com/ybgskr12/Musikbagas.git",
+  "repository": "https://github.com/grey423/MusikGrey.git",
   "stack": "container",
   "env": {
     "API_ID": {
