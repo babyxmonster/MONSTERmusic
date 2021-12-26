@@ -50,14 +50,14 @@ async def music_onoff(_, message: Message):
         return
     if len(message.command) != 2:
         return await message.reply_text(
-            "😕 **Ngetik yang bener ngentot.**\n\n» Coba `/musicplayer on` atau `/musicplayer off`"
+            "😕 **Ngetik yang bener bro :v.**\n\n» Coba `/musicplayer on` atau `/musicplayer off`"
         )
     status = message.text.split(None, 1)[1]
     message.chat.id
     if status in ("ON", "on", "On"):
         lel = await message.reply("`Processing...`")
         if not message.chat.id in DISABLED_GROUPS:
-            return await lel.edit("» **Musiknya udah hidup tolol...**")
+            return await lel.edit("» **Musiknya dah hidup Bro...**")
         DISABLED_GROUPS.remove(message.chat.id)
         await lel.edit(f"✅ **Musik dihidupin.**\n\n• Kalo bapak lu gabisa dihidupin...")
 
@@ -70,7 +70,7 @@ async def music_onoff(_, message: Message):
         await lel.edit(f"✅ **Musik dimatiin.**\n\n• Biar bisa nemenin bapak lu yg mati...")
     else:
         return await message.reply_text(
-            "😕 **Ngetik yang bener ngentot.**\n\n» Coba `/musicplayer on` atau `/musicplayer off`"
+            "😕 **Ngetik yang bener bro :v.**\n\n» Coba `/musicplayer on` atau `/musicplayer off`"
         )
 
 
@@ -97,8 +97,8 @@ async def play(_, message: Message):
                         [
                             [
                                 InlineKeyboardButton(
-                                    "✨ ʙᴀɢᴀsᴋᴀʀᴀ ✨",
-                                    url="https://t.me/loveisfuckedup",
+                                    "✨ ɢʀᴇʏ ✨",
+                                    url="https://t.me/greyupdate",
                                 )
                             ]
                         ]
@@ -152,7 +152,7 @@ async def play(_, message: Message):
         duration_sec = audio.duration
         if (audio.duration) > DURATION_LIMIT:
             return await mystic.edit_text(
-                f"**Durasinya Kepanjangan Cok Asuu**\n\n**Yang Boleh Cuman segini: **{DURATION_LIMIT_MIN} minute(s)\n**Yang Diterima:** {duration_min} minute(s)"
+                f"**Durasinya Kepanjangan Sayang**\n\n**Yang Boleh Cuman segini: **{DURATION_LIMIT_MIN} minute(s)\n**Yang Diterima:** {duration_min} minute(s)"
             )
         file_name = (
             audio.file_unique_id
@@ -179,7 +179,7 @@ async def play(_, message: Message):
             mystic,
         )
     elif url:
-        mystic = await message.reply_text("🔄 Memproses URL... SABARR!")
+        mystic = await message.reply_text("🔄 Memproses URL... SABARR-YAA!")
         query = message.text.split(None, 1)[1]
         (
             title,
@@ -201,7 +201,7 @@ async def play(_, message: Message):
                 message.from_user.first_name, message.from_user.id, "abcd"
             )
             await message.reply_photo(
-                photo="https://telegra.ph/file/3d60712c779c10891e1ce.jpg",
+                photo="https://telegra.ph/file/09f3f39dd43de5b66d538.jpg",
                 caption=(
                     "**Pakai:** /play [Judul lagu atau Link YouTube atau Reply to Audio]\n\nKALAU MAU MILIH! PILIH AJA NOH SENDIRI DI BAWAH JANGAN MANJA."
                 ),
